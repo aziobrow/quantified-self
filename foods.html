@@ -14,10 +14,14 @@
 
   <form>
     Food Name:<br>
-    <input type="text" name="new-food-name" id="new-food-name"><br>
+    <input type="text" name="new-food-name" id="new-food-name" required
+      oninvalid="this.setCustomValidity('Please enter a food name.')"
+      oninput="setCustomValidity('')"/><br>
     Calorie Count:<br>
-    <input type="text" name="new-food-calories" id="new-food-calorie-count"><br>
-    <button id="new-food-button">Add Foood</button>
+    <input type="text" name="new-food-calories" id="new-food-calorie-count" required
+      oninvalid="this.setCustomValidity('Please enter calorie amount.')"
+      oninput="setCustomValidity('')"/><br>
+    <button id="new-food-button">Add Food</button>
   </form>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
