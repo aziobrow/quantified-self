@@ -5,7 +5,22 @@
   <title>Quantified Self - Manage Foods</title>
 </head>
 <body>
+  <table id='food-table'>
+    <tr>
+      <th>Name</th>
+      <th>Calories</th>
+    </tr>
+  </table>
 
+  <form>
+    Food Name:<br>
+    <input type="text" name="new-food-name" id="new-food-name"><br>
+    Calorie Count:<br>
+    <input type="text" name="new-food-calories" id="new-food-calorie-count"><br>
+    <button id="new-food-button">Add Foood</button>
+  </form>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="main.bundle.js"></script>
 </body>
 </html>
