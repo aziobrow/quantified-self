@@ -13,8 +13,12 @@ td {
 
 th {
   padding: 10px;
-  font-size: 18px;
+  font-size: 16px;
   color: #0c0c0c;
+}
+
+p {
+  margin-top: 20px;
 }
 
 .calories {
@@ -25,8 +29,8 @@ th {
   text-align: center;
 }
 
-#food-table {
-  border: 3px solid #0c0c0c;
+#food-table, #breakfast-foods, #lunch-foods, #dinner-foods, #snack-foods {
+  border: 2px solid #0c0c0c;
   border-collapse: collapse;
   background: #D5C9DF;
 }
