@@ -1,0 +1,65 @@
+body {
+  background: #CEEAF7;
+  padding: 15px;
+}
+img {
+  height: 25px;
+}
+
+td {
+  min-width: 120px;
+  padding: 15px;
+}
+
+th {
+  padding: 10px;
+  font-size: 18px;
+  color: #0c0c0c;
+}
+
+.calories {
+  text-align: center;
+}
+
+.delete-icon {
+  text-align: center;
+}
+
+#food-table {
+  border: 3px solid #0c0c0c;
+  border-collapse: collapse;
+  background: #D5C9DF;
+}
+
+#food-table tr:first-of-type {
+  background: #828A95;
+  color: #DCB8CB;
+}
+
+#search-term {
+  margin: 10px;
+}
+
+#new-food-form {
+  margin: 10px;
+}
+
+#new-food-button {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background: #D5C9DF;
+  box-shadow: 2px 2px 2px 2px .5;
+}
+
+#new-food-name, #new-food-calorie-count {
+  margin: 5px;
+}
+
+
+/*gray: #828A95
+light-blue: #CEEAF7
+silver: #CCD7E4
+lavendar: #D5C9DF
+pink: #DCB8CB
+black: #0c0c0c*/
