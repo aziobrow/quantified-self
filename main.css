@@ -16,10 +16,12 @@ th {
   font-size: 16px;
   color: #0c0c0c;
   min-width: 120px;
+  background: #828A95;
 }
 
 tr {
   border: 2px solid #0c0c0c;
+  background: #D5C9DF;
 }
 
 p {
@@ -35,7 +37,7 @@ p {
 }
 
 .totals {
-  background: #CCD7E4;
+  background: #CCD7E4 !important;
 }
 
 
@@ -43,10 +45,6 @@ p {
   border: 2px solid #0c0c0c;
   border-collapse: collapse;
   background: #D5C9DF;
-}
-
-.header {
-  background: #828A95;
 }
 
 #food-table tr:first-of-type {
