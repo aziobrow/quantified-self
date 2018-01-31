@@ -13,8 +13,17 @@ td {
 
 th {
   padding: 10px;
-  font-size: 18px;
+  font-size: 16px;
   color: #0c0c0c;
+  min-width: 120px;
+}
+
+tr {
+  border: 2px solid #0c0c0c;
+}
+
+p {
+  margin-top: 20px;
 }
 
 .calories {
@@ -25,15 +34,23 @@ th {
   text-align: center;
 }
 
-#food-table {
-  border: 3px solid #0c0c0c;
+.totals {
+  background: #CCD7E4;
+}
+
+
+.meals, #food-table {
+  border: 2px solid #0c0c0c;
   border-collapse: collapse;
   background: #D5C9DF;
 }
 
+.header {
+  background: #828A95;
+}
+
 #food-table tr:first-of-type {
   background: #828A95;
-  color: #DCB8CB;
 }
 
 #search-term {
