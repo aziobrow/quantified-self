@@ -3,136 +3,157 @@
 <head>
   <meta charset="utf-8">
   <title>Quantified Self - Diary</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600" rel="stylesheet">
 </head>
 <body>
 
-  <p>Foods</p>
-  <button id='redirect-to-foods'>Create New</button></br>
+  <h1>My Diary</h1>
 
-  <p>Add to Selected Meal</p>
-  <div id='meal-buttons'></div>
-  </br>
-
-  <label>Filter by Name</label></br>
-  <input type='text' id='diary-search-term'>
-
-  <table id='available-food-table'>
-    <tr>
-      <th>Name</th>
-      <th>Calories</th>
-      <th></th>
-    </tr>
-  </table>
-
-  <p>Breakfast</p>
-  <table class="meals" id="Breakfast">
-    <thead class="header">
+  <div class='entire-add-foods-container'>
+  <div class='manage-foods-container'>
+    <div class='new-and-filter-container'>
+      <div class='label'>Foods</div>
+      <button id='redirect-to-foods'>Create New</button></br>
+      <div class='label'>Filter by Name</div></br>
+      <input type='text' id='diary-search-term'>
+    </div>
+    <table id='available-food-table'>
       <tr>
         <th>Name</th>
         <th>Calories</th>
         <th></th>
       </tr>
-    </thead>
-    <tbody>
-      <tr class="totals">
-        <td>Total Calories:</td>
-        <td class="total-calories"></td>
-        <td></td>
-      </tr>
-      <tr class="remaining">
-        <td>Remaining Calories:</td>
-        <td class="remaining-calories"></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+    </table>
+  </div>
 
-  <p>Lunch</p>
-  <table  class="meals" id="Lunch">
-    <thead class="header">
-      <tr>
-        <th>Name</th>
-        <th>Calories</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="totals">
-        <td>Total Calories:</td>
-        <td class="total-calories"></td>
-        <td></td>
-      </tr>
-      <tr class="remaining">
-        <td>Remaining Calories:</td>
-        <td class="remaining-calories"></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class='add-foods-container'>
+    <div class='add-meal-selections'>
+      <div class='label'>Add Selected to Meal</div>
+      <div id='meal-buttons'></div>
+    </div>
 
-  <p>Dinner</p>
-  <table class="meals" id="Dinner">
-    <thead>
-      <tr class="header">
-        <th>Name</th>
-        <th>Calories</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="totals">
-        <td>Total Calories:</td>
-        <td class="total-calories"></td>
-        <td></td>
-      </tr>
-      <tr class="remaining">
-        <td>Remaining Calories:</td>
-        <td class="remaining-calories"></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  </div>
+</div>
 
-  <p>Snacks</p>
-  <table  class="meals" id="Snack">
-    <thead class="header">
-      <tr>
-        <th>Name</th>
-        <th>Calories</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="totals">
-        <td>Total Calories:</td>
-        <td class="total-calories"></td>
-        <td></td>
-      </tr>
-      <tr class="remaining">
-        <td>Remaining Calories:</td>
-        <td class="remaining-calories"></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class='diary-meals-container'>
 
-  <p>Totals</p>
-  <table  id="calorie-summary">
-    <tbody>
-      <tr class='goal-summary'>
-        <th>Goal Calories</th>
-        <td id='goal-calories-total'>2000</td>
-      </tr>
-      <tr class='total-summary'>
-        <th>Total Calories</th>
-        <td id='total-calories-total'></td>
-      </tr>
-      <tr class='remaining-summary'>
-        <th>Remaining Calories</th>
-        <td id='remaining-calories-total'></td>
-      </tr>
-    </tbody>
-  </table>
+    <div class='left-container'>
+      <div class='label'>Breakfast</div>
+      <table class="meals" id="Breakfast">
+        <thead class="header">
+          <tr>
+            <th>Name</th>
+            <th class='calories' >Calories</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="totals">
+            <td>Total Calories:</td>
+            <td class="total-calories"></td>
+            <td></td>
+          </tr>
+          <tr class="remaining">
+            <td>Remaining Calories:</td>
+            <td class="remaining-calories"></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class='label'>Dinner</div>
+      <table class="meals" id="Dinner">
+        <thead>
+          <tr class="header">
+            <th>Name</th>
+            <th class='calories' >Calories</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="totals">
+            <td>Total Calories:</td>
+            <td class="total-calories"></td>
+            <td></td>
+          </tr>
+          <tr class="remaining">
+            <td>Remaining Calories:</td>
+            <td class="remaining-calories"></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class='right-container'>
+      <div class='label'>Lunch</div>
+      <table  class="meals" id="Lunch">
+        <thead class="header">
+          <tr>
+            <th>Name</th>
+            <th class='calories' >Calories</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="totals">
+            <td>Total Calories:</td>
+            <td class="total-calories"></td>
+            <td></td>
+          </tr>
+          <tr class="remaining">
+            <td>Remaining Calories:</td>
+            <td class="remaining-calories"></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class='label'>Snacks</div>
+      <table  class="meals" id="Snack">
+        <thead class="header">
+          <tr>
+            <th>Name</th>
+            <th class='calories'>Calories</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="totals">
+            <td>Total Calories:</td>
+            <td class="total-calories"></td>
+            <td></td>
+          </tr>
+          <tr class="remaining">
+            <td>Remaining Calories:</td>
+            <td class="remaining-calories"></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <div class='totals-container'>
+    <div class='label'>Totals</div>
+    <table  id="calorie-summary">
+      <tbody>
+        <tr class='goal-summary'>
+          <th>Goal Calories</th>
+          <td id='goal-calories-total'>2000</td>
+        </tr>
+        <tr class='total-summary'>
+          <th>Total Calories</th>
+          <td id='total-calories-total'></td>
+        </tr>
+        <tr class='remaining-summary'>
+          <th>Remaining Calories</th>
+          <td id='remaining-calories-total'></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
 
 
