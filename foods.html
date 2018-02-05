@@ -3,11 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>Quantified Self - Manage Foods</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600" rel="stylesheet">
 </head>
 <body>
-
-  <label>Filter by Name</label></br>
-  <input type='text' id='search-term'>
+<h1>Create New Food</h1>
+<div class='entire-add-foods-container'>
+<div class='manage-foods-container'>
+  <div class='new-and-filter-container'>
+    <div class='label'>Filter by Name</div>
+    <input type='text' id='search-term'>
+  </div>
 
   <table id='food-table' class="filterable">
     <tr>
@@ -16,18 +21,22 @@
       <th></th>
     </tr>
   </table>
+</div>
 
+<div class='add-meal-selections'>
   <form id='new-food-form'>
-    Food Name:<br>
+    <div class='label'>Food Name</div><br>
     <input type="text" name="new-food-name" id="new-food-name" required
       oninvalid="this.setCustomValidity('Please enter a food name.')"
       oninput="setCustomValidity('')"/><br>
-    Calorie Count:<br>
+    <div class='label'>Calorie Count</div><br>
     <input type="text" name="new-food-calories" id="new-food-calorie-count" required
       oninvalid="this.setCustomValidity('Please enter calorie amount.')"
       oninput="setCustomValidity('')"/><br>
     <button id="new-food-button">Add Food</button>
   </form>
+</div>
+</div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="main.bundle.js"></script>
