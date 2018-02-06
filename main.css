@@ -57,6 +57,14 @@ button:hover  {
   color: white;
 }
 
+input[type=text]  {
+  border-radius: 3px;
+  -webkit-box-shadow:
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1);
+  padding-left: 5px;
+}
+
 .entire-add-foods-container {
   display: flex;
   flex-direction: row;
@@ -71,18 +79,6 @@ button:hover  {
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 10px;
-}
-
-#redirect-to-foods, #diary-search-term  {
-  margin-left: 10px;
-  margin-right: 15px;
-  height: 20px;
-  margin-top: 13px;
-  display: flex;
-}
-
-#diary-search-term  {
-  width: 30%;
 }
 
 .add-foods-container {
@@ -127,11 +123,6 @@ button:hover  {
   text-align: center;
 }
 
-#Breakfast, #Lunch, #Dinner, #Snack, #calorie-summary  {
-  margin: auto;
-  padding: 30px;
-}
-
 .right-container {
   float: right;
   width: 50%;
@@ -148,6 +139,23 @@ button:hover  {
   justify-content: center;
 }
 
+#Breakfast, #Lunch, #Dinner, #Snack, #calorie-summary  {
+  margin: auto;
+  padding: 30px;
+}
+
+#redirect-to-foods, #diary-search-term  {
+  margin-left: 10px;
+  margin-right: 15px;
+  height: 20px;
+  margin-top: 13px;
+  display: flex;
+}
+
+#diary-search-term  {
+  width: 30%;
+}
+
 #new-food-name, #new-food-calorie-count  {
   margin-bottom: 10px;
 }
@@ -156,14 +164,6 @@ button:hover  {
   height: 20px;
   width: 30%;
   margin-top: 15px;
-}
-
-input[type=text]  {
-  border-radius: 3px;
-  -webkit-box-shadow:
-    inset 0 0 8px  rgba(0,0,0,0.1),
-          0 0 16px rgba(0,0,0,0.1);
-  padding-left: 5px;
 }
 
 #new-food-button  {
