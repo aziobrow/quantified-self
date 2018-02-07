@@ -27,13 +27,13 @@
 <div class='add-meal-selections'>
   <form id='new-food-form'>
     <div class='label'>Food Name</div><br>
-    <input type="text" name="new-food-name" id="new-food-name" required
-      oninvalid="this.setCustomValidity('Please enter a food name.')"
-      oninput="setCustomValidity('')"/><br>
+    <input type="text" name="new-food-name" id="new-food-name" required/>
+    <p class="validation-message">*Please enter a food name.</p>
+    <br>
     <div class='label'>Calorie Count</div><br>
-    <input type="text" name="new-food-calories" id="new-food-calorie-count" required
-      oninvalid="this.setCustomValidity('Please enter calorie amount.')"
-      oninput="setCustomValidity('')"/><br>
+    <input type="text" name="new-food-calories" id="new-food-calorie-count" required/>
+    <p class="validation-message">*Please enter a calorie count.</p>
+    <br>
     <button id="new-food-button">Add Food</button>
   </form>
 </div>

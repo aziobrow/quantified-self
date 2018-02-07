@@ -65,6 +65,11 @@ input[type=text]  {
   padding-left: 5px;
 }
 
+.validation-message {
+  display: none;
+  color: #CD5C5C;
+}
+
 .entire-add-foods-container {
   display: flex;
   flex-direction: row;
