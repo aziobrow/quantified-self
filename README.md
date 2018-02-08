@@ -19,10 +19,10 @@ To set up this project:
 `npm install`
 
 4) Spin Up the Server
+
 `npm start`
 
 Optionally, you can also include
 `npm install webpack-dev-server --save-dev`, which will allow you to run the command `webpack-dev-server` that automatically reloads your files as they change, so that you don't have to manually rebuild every time you want to see your changes.
 
-Visit the page
-Once the server is running, check your localhost port to see where to visit in order to interact with the user interface in the browser. 
+Once the server is running, check your localhost port to see where to visit in order to interact with the user interface in the browser.
