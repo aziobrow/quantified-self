@@ -96,7 +96,6 @@ input[type=text]  {
   display: flex;
   margin: 40px;
   flex-direction: column;
-
 }
 
 .add-meal-selections  {
@@ -173,4 +172,13 @@ input[type=text]  {
 
 #new-food-button  {
   margin-bottom: 15px;
+}
+
+.totals {
+  background: #C0C0C0;
+}
+
+#redirect-to-diary  {
+  margin-bottom: 15px;
+  margin-top: 18px;
 }
