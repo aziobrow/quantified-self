@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Quantified Self - Manage Foods</title>
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600" rel="stylesheet">
 </head>
 <body>
-<h1>Create New Food</h1>
-<div class='entire-add-foods-container'>
-<div class='manage-foods-container'>
-  <div class='new-and-filter-container'>
-    <div class='label'>Search by Name</div>
-    <input type='text' id='search-term'>
-    <button id='redirect-to-diary'>Go To Diary</button></br>
-  </div>
+  <main role="main">
+    <h1>Create New Food</h1>
+    <div class='entire-add-foods-container'>
+    <div class='manage-foods-container'>
+      <div class='new-and-filter-container'>
+        <div class='label'>Search by Name</div>
+        <input type='text' id='search-term' role="search">
+        <button id='redirect-to-diary'>Go To Diary</button></br>
+      </div>
 
-  <table id='food-table' class="filterable">
-    <tr>
-      <th>Name</th>
-      <th>Calories</th>
-      <th></th>
-    </tr>
-  </table>
-</div>
+      <table id='food-table' class="filterable">
+        <tr>
+          <th>Name</th>
+          <th>Calories</th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
 
-<div class='add-meal-selections'>
-  <form id='new-food-form'>
-    <div class='label'>Food Name</div><br>
-    <input type="text" name="new-food-name" id="new-food-name" required/>
-    <p class="validation-message">*Please enter a food name.</p>
-    <br>
-    <div class='label'>Calorie Count</div><br>
-    <input type="text" name="new-food-calories" id="new-food-calorie-count" required/>
-    <p class="validation-message">*Please enter a calorie count.</p>
-    <br>
-    <button id="new-food-button">Add Food</button>
-  </form>
-</div>
-</div>
+    <div class='add-meal-selections'>
+      <form id='new-food-form' role="form">
+        <label class='label'>Food Name</label><br>
+        <input type="text" name="new-food-name" id="new-food-name" required/>
+        <p class="validation-message">*Please enter a food name.</p>
+        <br>
+        <label class='label'>Calorie Count</label><br>
+        <input type="text" name="new-food-calories" id="new-food-calorie-count" required/>
+        <p class="validation-message">*Please enter a calorie count.</p>
+        <br>
+        <button id="new-food-button">Add Food</button>
+      </form>
+    </div>
+    </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-  <script src="main.bundle.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="main.bundle.js"></script>
+  </main>
 </body>
 </html>
