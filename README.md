@@ -2,6 +2,8 @@
 
 Quantified Self is a calorie-tracking application, composed of a decoupled front-end and back-end. The front-end is built in JavaScript, JQuery, HTML, and CSS, and is hosted on Github Pages.  The application stores foods, which can be associated with meals to track calorie counts for each food, meal, and total.
 
+The front-end production can be viewed [here](https://aziobrow.github.io/quantified-self/)
+
 The backend can be found [here](https://github.com/dionew1/express-qs), and more details can be found in that project's ReadMe.
 
 This was a 2.5 week partner project, and the original repository and project specifications can be found [here](http://backend.turing.io/module4/projects/quantified-self/quantified-self).
@@ -31,7 +33,13 @@ Once the server is running, check your localhost port to see where to visit in o
 
 **API**
 
-The following endpoints are utilized:
+All endpoints are RESTful and all responses are in JSON format. Some important things to note:
+
+The base url for API endpoints are: https://enigmatic-ravine-22013.herokuapp.com
+Requests are case sensitive
+Params for POST and PUT requests should be passed as x-www-form-urlencoded
+
+The following endpoints are available. All endpoints will return the data as JSON.
 
 ## Food Endpoints:
 

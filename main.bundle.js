@@ -97,7 +97,7 @@
 	};
 
 	$("#redirect-to-foods").on("click", function () {
-	  window.location.href = "http://localhost:8080/webpack-dev-server/foods.html";
+	  window.location.href = "https://aziobrow.github.io/quantified-self/foods.html";
 	});
 
 	$("#meal-buttons").on("click", function (event) {
@@ -771,7 +771,7 @@
 	$('#search-term').on('keyup', filterFoods);
 
 	$("#redirect-to-diary").on("click", function () {
-	  window.location.href = "http://localhost:8080/webpack-dev-server/";
+	  window.location.href = "https://aziobrow.github.io/quantified-self/";
 	});
 
 	module.exports = { getFoodNames: getFoodNames, renderFoodTableContent: renderFoodTableContent, makeRequest: makeRequest };
