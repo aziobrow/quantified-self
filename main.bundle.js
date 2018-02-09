@@ -782,7 +782,7 @@
 
 	'use strict';
 
-	var url = 'https://enigmatic-ravine-22013.herokuapp.com/';
+	var url = 'https://enigmatic-ravine-22013.herokuapp.com';
 
 	var handleResponse = function handleResponse(response) {
 	  return response.json().then(function (json) {
