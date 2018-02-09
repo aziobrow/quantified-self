@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Quantified Self - Diary</title>
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600" rel="stylesheet">
 </head>
 <body>
-
+<main>
   <h1>My Diary</h1>
 
   <div class='entire-add-foods-container'>
   <div class='manage-foods-container'>
     <div class='new-and-filter-container'>
-      <div class='label'>Foods</div>
+      <label class='label'>Foods</label>
       <button id='redirect-to-foods'>Create New</button></br>
-      <div class='label'>Search by Name</div></br>
-      <input type='text' id='search-term'>
+      <label class='label'>Search by Name</label></br>
+      <input type='text' id='search-term' role="search">
     </div>
     <table id='available-food-table' class="filterable">
       <tr>
         <th>Name</th>
         <th class='calories'>Calories</th>
-        <th></th>
+        <th>Select Foods for Meal</th>
       </tr>
     </table>
   </div>
@@ -38,7 +38,7 @@
   <div class='diary-meals-container'>
 
     <div class='left-container'>
-      <div class='label'>Breakfast</div>
+      <div class='label meal'>Breakfast</div>
       <table class="meals" id="Breakfast">
         <thead class="header">
           <tr>
@@ -61,7 +61,7 @@
         </tbody>
       </table>
 
-      <div class='label'>Dinner</div>
+      <div class='label meal'>Dinner</div>
       <table class="meals" id="Dinner">
         <thead>
           <tr class="header">
@@ -86,7 +86,7 @@
     </div>
 
     <div class='right-container'>
-      <div class='label'>Lunch</div>
+      <div class='label meal'>Lunch</div>
       <table  class="meals" id="Lunch">
         <thead class="header">
           <tr>
@@ -109,7 +109,7 @@
         </tbody>
       </table>
 
-      <div class='label'>Snacks</div>
+      <div class='label meal'>Snacks</div>
       <table  class="meals" id="Snack">
         <thead class="header">
           <tr>
@@ -136,7 +136,7 @@
   </div>
 
   <div class='totals-container'>
-    <div class='label'>Totals</div>
+    <div class='label meal'>Totals</div>
     <table  id="calorie-summary">
       <tbody>
         <tr class='goal-summary'>
@@ -156,7 +156,7 @@
   </div>
 
 
-
+</main>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="main.bundle.js"></script>
 </body>

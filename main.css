@@ -114,6 +114,10 @@ input[type=text]  {
   color: #58A4B0;
 }
 
+.meal {
+  color: black;
+}
+
 .add-to-meal {
   margin: 15px;
 }
