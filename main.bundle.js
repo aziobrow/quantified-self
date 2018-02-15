@@ -71,6 +71,16 @@
 	  fetch(helperFile.url + 'api/v1/meals').then(function (response) {
 	    return helperFile.handleResponse(response);
 	  }).then(function (meals) {
+	    return setUpButtons(meals);
+	  }).catch(function (error) {
+	    return console.error({ error: error });
+	  });
+	};
+
+	var fetchMealFoods = function fetchMealFoods() {
+	  fetch(helperFile.url + 'api/v1/meals').then(function (response) {
+	    return helperFile.handleResponse(response);
+	  }).then(function (meals) {
 	    return getEachMeal(meals);
 	  }).catch(function (error) {
 	    return console.error({ error: error });
@@ -79,14 +89,21 @@
 
 	var getEachMeal = function getEachMeal(mealData) {
 	  mealData.forEach(function (meal) {
-	    setUpButton(meal);
-	    renderMeals(meal);
+	    fetch(helperFile.url + 'api/v1/meals/' + meal.id + '/foods').then(function (response) {
+	      return helperFile.handleResponse(response);
+	    }).then(function (mealfoods) {
+	      return renderMeals(mealfoods);
+	    }).catch(function (error) {
+	      return console.error({ error: error });
+	    });
 	  });
 	};
 
-	var setUpButton = function setUpButton(meal) {
-	  $('#meal-buttons').append('<button class=\'add-to-meal\' data-meal=' + meal.id + '>\n      ' + meal.name + '\n    </button></br>');
-	  addIdstoTables(meal);
+	var setUpButtons = function setUpButtons(meals) {
+	  meals.forEach(function (meal) {
+	    $('#meal-buttons').append('<button class=\'add-to-meal\' data-meal=' + meal.id + '>\n        ' + meal.name + '\n      </button></br>');
+	    addIdstoTables(meal);
+	  });
 	};
 
 	var addIdstoTables = function addIdstoTables(meal) {
@@ -218,6 +235,7 @@
 	  var page = getPage();
 	  if (page != 'foods.html') {
 	    getMeals();
+	    fetchMealFoods();
 	  }
 	});
 
@@ -248,9 +266,11 @@
 
 	var renderMeals = function renderMeals(meal) {
 	  var tableName = meal.name;
-	  meal.foods.forEach(function (food) {
-	    renderFood(food, tableName);
-	  });
+	  if (meal.foods) {
+	    meal.foods.forEach(function (food) {
+	      renderFood(food, tableName);
+	    });
+	  }
 	  mealFile.calculateTotalCalories(tableName);
 	  mealFile.calculateCalorieSummary();
 	};
@@ -840,7 +860,7 @@
 	  var startingCalories = void 0;
 
 	  switch (table.id) {
-	    case 'Snack':
+	    case 'Snacks':
 	      startingCalories = 200;
 	      break;
 	    case 'Breakfast':
